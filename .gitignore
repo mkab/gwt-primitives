@@ -7,6 +7,7 @@
 # gwt caches and compiled units #
 war/gwt_bree/
 gwt-unitCache/
+out/
 
 # boilerplate generated classes #
 .apt_generated/
@@ -15,3 +16,12 @@ gwt-unitCache/
 war/WEB-INF/deploy/
 war/WEB-INF/classes/
 
+# IntelliJ IDEA files #
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Eclipse files #
+.settings
+.project
