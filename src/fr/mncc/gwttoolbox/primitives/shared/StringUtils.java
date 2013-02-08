@@ -75,8 +75,7 @@ public class StringUtils {
     if (str == null)
       return DefaultValues.floatDefaultValue();
 
-    str = str.trim();
-    str.replace(',', '.');
+    str = str.trim().replace(',', '.');
     float val = DefaultValues.floatDefaultValue();
     try {
       val = Float.parseFloat(str);
@@ -95,8 +94,7 @@ public class StringUtils {
     if (str == null)
       return DefaultValues.doubleDefaultValue();
 
-    str = str.trim();
-    str.replace(',', '.');
+    str = str.trim().replace(',', '.');
     double val = DefaultValues.doubleDefaultValue();
     try {
       val = Double.parseDouble(str);
