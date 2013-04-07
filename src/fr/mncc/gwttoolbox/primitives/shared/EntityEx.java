@@ -26,7 +26,7 @@ import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 public class EntityEx extends Entity {
 
@@ -59,7 +59,7 @@ public class EntityEx extends Entity {
     super(kind, id);
   }
 
-  public EntityEx(String kind, long id, Map<String, String> properties) {
+  public EntityEx(String kind, long id, List<String> properties) {
     super(kind, id, properties);
   }
 
