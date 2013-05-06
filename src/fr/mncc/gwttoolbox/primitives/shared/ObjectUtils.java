@@ -79,6 +79,66 @@ public class ObjectUtils {
   }
   
   /**
+	* Returns true if str is an Integer.
+	*
+	* @param str serialized object
+	* @return boolean
+	*/
+	private static Boolean isInteger(String str) {
+		int index = str == null? -1 : str.indexOf(':');
+		int type = StringUtils.parseInt(str.substring(0, index));
+		return type == TYPE_INTEGER;
+	}
+	
+	/**
+	* Returns true if str is a Double.
+	*
+	* @param str serialized object
+	* @return boolean
+	*/
+	private static Boolean isDouble(String str) {
+		int index = str == null? -1 : str.indexOf(':');
+		int type = StringUtils.parseInt(str.substring(0, index));
+		return type == TYPE_DOUBLE;
+	}
+
+	/**
+	* Returns true if str is a Float.
+	*
+	* @param str serialized object
+	* @return boolean
+	*/
+	private static Boolean isFloat(String str) {
+		int index = str == null? -1 : str.indexOf(':');
+		int type = StringUtils.parseInt(str.substring(0, index));
+		return type == TYPE_FLOAT;
+	}
+	
+	/**
+	* Returns true if str is a Boolean.
+	*
+	* @param str serialized object
+	* @return boolean
+	*/
+	private static Boolean isBoolean(String str) {
+		int index = str == null? -1 : str.indexOf(':');
+		int type = StringUtils.parseInt(str.substring(0, index));
+		return type == TYPE_BOOLEAN;
+	}
+	
+	/**
+	* Returns true if str is a String.
+	*
+	* @param str serialized object
+	* @return boolean
+	*/
+	private static Boolean isString(String str) {
+		int index = str == null? -1 : str.indexOf(':');
+		int type = StringUtils.parseInt(str.substring(0, index));
+		return type == TYPE_STRING;
+	}
+  
+  /**
    * Returns true if str is a timestamp, a time or a date.
    *
    * @param str serialized object
